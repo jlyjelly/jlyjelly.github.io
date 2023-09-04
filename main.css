@@ -1,0 +1,395 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Varela+Round&display=swap');
+
+  /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+        /* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */         
+  
+  /* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+:root {
+    --lightblue: rgba(219,227,237,0.5);
+    --medblue: rgb(117, 161, 212);
+    --grayblue: rgb(168, 189, 214);
+    --navyblueclear: rgb(15, 27, 102, 0.85);
+    --navyblue: rgb(15, 27, 102);
+    --whiteblue: rgb(220, 241, 245);
+    --whiteblueclear: rgb(220, 241, 245,0.7);
+    --darkbluesky: rgb(102, 139, 192);
+    --indigo: rgb(179, 155, 235); 
+    --indigoclear: rgb(179, 155, 235,0.5); 
+    --lightpurple: rgb(204, 178, 216);
+    --pink: rgb(227, 201, 230);  
+    --darkpurple: rgb(48, 6, 65); 
+    --deeppink: rgb(238, 188, 233);
+    --darkpink:rgb(236, 163, 229, 0.75);
+    --lightpink: rgb(245, 219, 239);
+    --verylightpink: rgb(247, 237, 239);
+    --blue: rgb(73, 66, 210);
+    --red: rgb(183, 38, 94);
+    --lightbeige: rgb(244, 232, 210);
+    --cream: rgb(249, 250, 237);
+    --creamdark: rgb(229, 231, 203);
+    --coolblue: rgb(12, 96, 186);
+    --blueclear: rgb(73, 66, 210, 0.77);
+    --superlightindigo: rgb(224, 219, 234); 
+    --lightindigo: rgb(213, 204, 234); 
+    --brightblue: rgb(53, 116, 225);
+    
+
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {} or :root {} */
+  background-color: var(--navyblueclear);
+  font-family: 'PT Sans', sans-serif;
+  margin:0;
+  max-width: 100%;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header, footer {
+    font-family: 'Varela Round', sans-serif;
+
+    
+  }
+  header {
+    text-align: right;
+
+  }
+
+  #myname {
+    text-align: left;
+    font-size: 80px;
+    color: var(--cream);
+    padding-left: 10px;
+
+  }
+  #about {
+    text-align: left;
+    font-size: 18px;
+    color: var(--darkpurple);
+    padding-left: 10px;
+    font-family: 'PT Sans', sans-serif;
+
+  }
+
+  #intro1 {
+    font-size:40px;
+    color: var(--creamdark);
+    text-align: center;
+    padding:20px;
+    width: 800px;
+    height: 270px;
+    margin: 0 auto;
+  }
+
+  #intro2, #contactinfo, #skillsinfo {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    color: var(--whiteblue);
+    max-width: 80%;
+    text-align: left;
+
+  }
+  #aboutme, #myproj, #skillsh, #contacth {
+    margin-left:20px;
+    font-size:35px;
+    color: var(--creamdark);
+  }
+
+  #intro3 {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    color: var(--whiteblue);
+    max-width: 80%;
+    text-align: left;
+  }
+  #intro4 {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    color: var(--whiteblue);
+    max-width: 80%;
+    text-align: left;
+
+  }
+
+  main {
+
+    
+  }
+  footer{
+    margin: 5px;
+    color: var(--grayblue);
+  }
+
+  article {
+
+  }
+      #topic1 {}
+      #topic2 {}
+  div {}
+  aside {}
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+
+    
+  }
+  nav a {
+
+
+  }
+  nav a:hover {
+
+  }
+  
+  .home-navigation {
+      top: 0;
+      position: sticky;
+      background-color: var(--blueclear);
+      padding: 20px;
+
+  }
+
+.home-navigation a {
+  color: var(--lightpink);
+  font-size: 30px;
+  margin: 10px;
+
+
+}
+  
+.home-navigation a:hover {
+  color: var(--whiteblue);
+  font-weight: bold;
+}
+
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+
+  } 
+  h3, h4, h5, h6 {
+
+  } 
+  h1 {}
+  h2 {
+  }
+  h3 {}
+  h4 {}
+  h5 {
+  }
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  
+  
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+
+
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  
+  .profile-image {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Set the height to match the width for a perfect circle */
+    margin-right: 20px; /* Add some margin to create space between the image and text */
+    float: left; /* Float the image to the left so text flows around it */
+    border-radius: 50%; /* Create a circular border */
+    border: 6px solid white; /* Add a border and set its color */
+    margin-left: 20px;
+}
+
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+  gap: 10 px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#projects figcaption {
+display: block;
+padding: 1% 1% 1% 1%;
+text-align: center;
+color: var(--whiteblue);
+font-size:20px;
+
+}
+#projects img {
+  width: 300px;
+  height: 300px;
+  color:var(--darkpurple);
+}
+
+
+#projects figure {
+  margin: 1%;
+  padding: 1%;
+  color: var(--darkpurple);
+
+}
+
+/* Style the button with the "my-button" class */
+.viewdetails {
+  background-color: var(--blueclear );
+  color: var(--whiteblue);
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Style the button on hover */
+.viewdetails:hover {
+  background-color: var(--navyblue);
+  color: var(--whiteblue);
+}
+
+.popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow: auto;
+}
+
+
+.popup-content {
+  background-color: var(--navyblue);
+  margin: 20% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  color: white;
+  border-radius: 25px;
+  font-size:20px;
+
+  
+}
+
+/* Style for the close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.edited-image {
+  /* Adjust image size */
+  width: 200px; /* Change the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  border: 3px solid #FF5733;
+  border-color:aliceblue;
+  border-radius: 10px;
+}
+
+.visit {
+  color: white; /* Replace with your desired color code or color name */
+}
+
+.nnedit {
+  /* Adjust image size */
+
+  border-color:aliceblue;
+  border-radius: 10px;
+}
+
+
